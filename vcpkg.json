@@ -1,3 +1,5 @@
 {
-  "dependencies": []
+  "dependencies": [
+    "glfw3", "glad"
+  ]
 }

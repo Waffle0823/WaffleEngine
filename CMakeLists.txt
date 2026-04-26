@@ -10,6 +10,13 @@ set(PROJECT_VERSION
 
 project(WaffleEngine VERSION "${PROJECT_VERSION}")
 
+add_library(Engine)
+
+find_package(glfw3 CONFIG REQUIRED)
+find_package(glad CONFIG REQUIRED)
+
+target_link_libraries(Engine PRIVATE glfw glad)
+
 if(CMAKE_EXPORT_COMPILE_COMMANDS)
   add_custom_target(
     copy_compile_commands ALL
