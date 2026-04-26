@@ -27,3 +27,7 @@ if(CMAKE_EXPORT_COMPILE_COMMANDS)
     DEPENDS "${CMAKE_BINARY_DIR}/compile_commands.json"
     COMMENT "Creating symlink for compile_commands.json in source dir")
 endif()
+
+enable_testing()
+
+add_subdirectory(tests)
