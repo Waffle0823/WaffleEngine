@@ -15,7 +15,7 @@ add_library(Engine)
 find_package(glfw3 CONFIG REQUIRED)
 find_package(glad CONFIG REQUIRED)
 
-target_link_libraries(Engine PRIVATE glfw glad)
+target_link_libraries(Engine PRIVATE glfw glad::glad)
 
 if(CMAKE_EXPORT_COMPILE_COMMANDS)
   add_custom_target(
