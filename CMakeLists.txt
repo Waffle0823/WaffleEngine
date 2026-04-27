@@ -12,6 +12,10 @@ project(WaffleEngine VERSION "${PROJECT_VERSION}")
 
 add_library(Engine)
 
+target_sources(Engine PRIVATE src/engine.cpp)
+
+target_include_directories(Engine PUBLIC include)
+
 find_package(glfw3 CONFIG REQUIRED)
 find_package(glad CONFIG REQUIRED)
 
